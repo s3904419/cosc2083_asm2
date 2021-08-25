@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<title>ARDUINO PROJECT</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<style>
+body,h1,h2,h3,h4,h5,h6,ul {font-family: "Raleway", sans-serif}
+</style>
+
+<body class="w3-light-grey">
+
+
+    <div class="w3-content" style="max-width:1400px">
+    
+    <!-- Header -->
+    <header class="w3-container w3-center w3-padding-32"> 
+      <h1><b>PROJECT IDEA</b></h1>
+      <h6>A project made for toddlers to grow up without depending on smartphones and games.</h6>
+    </header>
+    <br>
+    <div class="w3-row">
+        <!-- Project Idea -->
+        <div class="w3-card-4 w3-margin w3-white">
+        <img src="arduino.png" alt="Arduino" style="width:100%">
+        
+      
+        <div class="w3-container">
+            <a href="https://www.tinkercad.com/things/bqK6iUeSGbq">Simulation link</a>
+            <ul>Overview</ul>
+            <p>This project might have limited usage, because it serves a rather personal purpose. I have many cousins that are 3 years old
+                or younger. The kids usually watch counting challenges videos on YouTube during lunch and dinner time, for the kids to silently eat.
+                Some of the parents ask me if I can do a counter on some custom devices so that their children can focus on that, instead of being annoying and interrupt them. 
+                This is the purpose to create an Arduino project that basically counts the number of times the button is pressed.</p>
+            
+            <ul>Motivation</ul>
+            <p>As mentioned in the overview, the motivation for this project is to help the parents from their little kids from interfering with their free time. 
+            Although the project is only a counter on an Arduino board, there could be many variations and updates that could help create some little games. 
+            A possible improvement is that I can add a stop clock that stops the time after the counter reaches a certain number. This could develop a quick game to decide 
+            who can press the button 10 times in a shorter time for example.</p>
+
+            <ul>Description</ul>
+            <p>This project will use an Arduino Uno R3 board and an LCD screen connected to the board to display the counter. Tinkercad provides an online simulator which is 
+            easier to demonstrate for this report, and simpler to process, since I am not familiar with Arduino. The functions are completely similar to an actual Arduino board. 
+            The red wires are connected to the anode (+) input, while the black wires are connected to the cathode (-) pins. The green wires are connected to pins 4 to 7 in both the
+            board and the LCD screen. The button is wired to an analog input.</p>
+            <p>The code uses C++ programming language, and the Liquid Crystal library is imported to support the coding experience. Other Arduino standard libraries are also used 
+            for this project (Arduino, 2021).  It can be seen in the first screenshot that the LCD screen will display the count on the first row, and timer will run on the second row. 
+            Most of the counting videos that kids under 3 year-old only counts to 10 or lower, so the program would stop both the counter and the timer when count reaches 10. The maximum
+            count and the timer can easily be changed to fit different purposes or activities. Coding the counter to increase the number every time button is pressed is not difficult,
+            but the timer is the trickiest part. </p>
+            <p>If the user only presses the button, the count will increase and the timer will keep running. Users can also hold the button and the timer will pause. With this feature, 
+            the simple counter can now act as a temporary stopwatch. Adults have better choices for stopwatches, but parents can take advantage of this to use as a toy for toddlers. 
+            Children 3-year-old or younger tend to have a low attention span, which leads to having low patience. Apart of spamming buttons for the counter to run, parents can use the 
+            stopwatch to trick their children to become more patient, by noticing the timer and hold the button at a particular point, and reward the kids with a small treat to encourage them.</p>
+            <p>When the simulation starts, the LCD screen will display a “Welcome” text for 2 seconds, then show the counter that starts at 0 and the timer will also start running. As mentioned 
+            above, the timer will stop permanently when the count reaches 10. There is a minor downside that is the small delay between each count, so spamming the button would not increases the 
+            count to 10 immediately, but take roughly 3.5 to 4 seconds. The timer would temporarily stop when the button is pressed and hold, and it continues when the button is released. The 
+            red button on the Arduino board would reset the entire program when pressed, and the simulation will restart, starting with the welcome message again. </p>
+            <p>This is only an online simulation, so it is difficult to add more complicating devices or techniques. However, if this can become a physical Arduino project, an Arduino microphone 
+            can be attached, and the number of features can increase dramatically. The microphone can detect voices, and count how many times a toddler say “papa” or “mama” in one day for example. 
+            This feature can be incredibly useful for parents to have more fun with their children, especially 1 or 2-year-old kids as this is the time they are learning how to speak.</p>
+            
+            <ul>Tools and Technologies</ul>
+            <p>The Arduino Uno R3 board and a compatible LCD screen is connected to it for this project. The code programming language is C++, and there are many built-in libraries provided by
+            Arduino to support the project. There was a huge struggle that no Arduino board is available because online shopping is blocked due to COVID-19. Luckily, Tinkercad provides an online 
+            simulator for the Arduino circuits. Some experiences or features might be limited on the simulator compare to the physical Arduino boards, but this is an acceptable prototype for presentation.</p>
+
+            <ul>Skills required</ul>
+            <p>The most important skill needed for the project is having knowledge of C or C++ programming language. Since this is not a challenging project, students with moderate coding skills can be able 
+            to finish this work. An Arduino Uno R3 board and a 16x2 LCD screen is also required. These hardware equipment are not difficult to purchase, as it is sold online on many shopping platforms, 
+            such as Shopee or Lazada. If the hardware is not available, Tinkercad website is a good alternative for having an online simulation of this project.</p>
+
+            <ul>Outcome</ul>
+            <p>It is clearly noticed that this project might not have a huge impact on a large population, however it would help parents with 3-year-old children or younger have an extra tool to play around with their kid. 
+            The initial purpose of the work is to create a simple counter with easy instructions for toddlers to play with and somehow cheat on counting challenges on YouTube videos that they watch on a daily basis. 
+            This simple Arduino board can also distract children from smartphones and tablets, and focus more on having fun with toys and people around them. Stopwatches can also develop patience on children, where 
+            they are required to notice the timer and stop the clock at some particular number in exchange for a small treat from adults. A simple counter with a timer can create various flash games for children and parents
+            to play together, therefore having a closer connection.  </p>
+            <div class="w3-col m8 s12">
+                <p><button class="w3-button w3-padding-large w3-white w3-border"><a href="index.html">BACK</a></button></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
